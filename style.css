@@ -73,7 +73,18 @@ h1{
     justify-content: center; /* Center boxes horizontally */
     gap: 2%; /* Add space between boxes */
     margin-top: 30px;
+    user-select: none;
+   
   }
+
+  .container > * {  /* Target direct children of .container (your flex items) */
+    transition: transform 0.3s ease; /* Add a smooth transition for transform */
+}
+
+.container > *:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
   
   .project-box {
     width: 300px; /* Adjust the width as needed */
@@ -86,4 +97,66 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.35) -10px 10px 15px;
   }
   
+  .project-links a {
+    display: inline-block; /* Make links act like blocks for padding and margin */
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s
+  }
+  
+  .project-links a:hover {
+    background-color: #EF9C66; /* Darker blue on hover */
+  }
+
+  footer {
+    background-color: #EF9C66;
+    padding: 0rem 4rem;
+    overflow: hidden;
+    margin-top: 2%;
+    font-size: large;
+}
+
+.f-container {
+    display: flex;
+    width: 100%;
+}
+
+.f-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 25px;
+}
+
+footer svg { /* Targets all SVGs within the footer */
+    width: 24px; 
+    height: 24px; 
+    
+}
+
+svg {
+    fill: #b45a23;
+    height: 25px;
+    transition: transform 0.2s ease-in-out;
+    user-select: none;
+}
+
+svg:hover {
+    transform: scale(1.5);
+}
+
  
