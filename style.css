@@ -189,6 +189,7 @@ svg:hover {
     background: #b45a23; 
 }
 
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -216,6 +217,7 @@ svg:hover {
         font-size: large; /* Adjust font size */
         text-align: center; /* Center text */
     }
+  
 
     footer{
         margin-top: 5%;
@@ -291,3 +293,4 @@ svg:hover {
 
     /* Adjust any other elements as needed for dark mode */
 }
+
