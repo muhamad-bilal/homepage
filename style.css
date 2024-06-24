@@ -3,6 +3,11 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body{
     background-color: #FCDC94;
 }
@@ -54,6 +59,7 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    width:100%;
 }
 
 .proj1{
@@ -160,3 +166,24 @@ svg:hover {
 }
 
  
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FCDC94;
+    border: 2px solid #FCDC94;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #EF9C66;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b45a23; 
+}
